@@ -8,6 +8,6 @@ dataBase = pymysql.connect(
 
 cursorObject = dataBase.cursor()
 
-cursorObject.execute("CREATE DATABASE CRM_db")
+cursorObject.execute("CREATE DATABASE IF NOT EXISTS elderco")
 
 print("connected mysql")
